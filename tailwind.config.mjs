@@ -1,9 +1,13 @@
 import { grayDark } from "@radix-ui/colors";
+import { fontFamily } from "tailwindcss/defaultTheme";
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Inter Variable", ...fontFamily.sans],
+      },
       colors: {
         gray: {
           1: grayDark.gray1,

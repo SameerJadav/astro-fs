@@ -1,9 +1,39 @@
 ---
 import HomepageLayout from "~/layouts/HomepageLayout.astro";
+import { Image } from "astro:assets";
+import hero from "~/images/hero.webp";
+import ContactButton from "~/components/ContactButton.astro";
 ---
 
 <HomepageLayout>
   <main>
-    <p>homepage</p>
+    <section
+      class="h-dvh w-dvh flex md:items-center gap-4 flex-col-reverse md:flex-row"
+    >
+      <div class="flex-1 pl-4 md:pl-6 space-y-4 md:space-y-6 pb-4 md:pb-0">
+        <h1
+          class="text-6xl md:text-7xl font-bold tracking-tighter text-balance"
+        >
+          Music Production Studio
+        </h1>
+        <p class="text-gray-11 text-balance text-lg md:text-xl">
+          Fatality Studios is a studio for every aspect - commercial,
+          independent artist or personal use. Disscuss your vision and leave the
+          rest to us.
+        </p>
+        <div>
+          <ContactButton />
+        </div>
+      </div>
+      <div class="flex-1">
+        <Image
+          src={hero}
+          class="object-cover h-dvh md:object-left-top"
+          fetchpriority="high"
+          alt="Image showcasing all genres posters."
+          loading="eager"
+        />
+      </div>
+    </section>
   </main>
 </HomepageLayout>
