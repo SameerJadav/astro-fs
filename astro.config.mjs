@@ -9,11 +9,10 @@ export default defineConfig({
   // TODO: Change this to https://fatalitystudios.com
   site: "https://astro-fs.vercel.app",
   integrations: [react(), tailwind()],
-  output: "server",
+  output: "hybrid",
   adapter: vercel({
     webAnalytics: {
       enabled: true,
     },
-    imageService: true,
   }),
 });
