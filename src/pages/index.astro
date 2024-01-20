@@ -1,10 +1,10 @@
 ---
-import HomepageLayout from "~/layouts/HomepageLayout.astro";
-import { Image } from "astro:assets";
-import hero from "~/images/hero.webp";
-import ContactButton from "~/components/ContactButton.astro";
+import { Picture } from "astro:assets";
 import Carousel from "~/components/Carousel.astro";
+import ContactButton from "~/components/ContactButton.astro";
 import Footer from "~/components/Footer.astro";
+import hero from "~/images/hero.webp";
+import HomepageLayout from "~/layouts/HomepageLayout.astro";
 ---
 
 <HomepageLayout>
@@ -28,12 +28,15 @@ import Footer from "~/components/Footer.astro";
         </div>
       </div>
       <div class="flex-1">
-        <Image
+        <Picture
           src={hero}
-          class="h-dvh object-cover md:object-left-top"
-          fetchpriority="high"
           alt="Image showcasing all genres posters."
           loading="eager"
+          fetchpriority="high"
+          class="h-dvh object-cover md:object-left-top"
+          formats={["avif", "webp"]}
+          widths={[320, 768, 1200, 1920, hero.width]}
+          sizes={`(max-width: 600px) 320px, (max-width: 900px) 768px, (max-width: 1600px) 1200px, 1920px, ${hero.width}px`}
         />
       </div>
     </section>
