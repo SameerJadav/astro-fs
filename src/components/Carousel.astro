@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import { POSTERS } from "~/config";
+import { genres } from "~/config";
 ---
 
 <section
@@ -31,11 +31,11 @@ import { POSTERS } from "~/config";
       class="grid flex-1 snap-x snap-mandatory auto-cols-[calc((100%-1rem)/2)] grid-flow-col gap-4 overflow-x-hidden md:auto-cols-[calc((100%-2*1.5rem)/3)] md:gap-6 lg:auto-cols-[calc((100%-3*1.5rem)/4)] 2xl:auto-cols-[calc((100%-3*2rem)/4)] 2xl:gap-8"
     >
       {
-        POSTERS.map(({ href, src, alt }) => (
-          <a href={href} class="snap-end">
+        genres.map(({ path, posterImage, posterImageAltText }) => (
+          <a href={path} class="snap-end">
             <Image
-              src={src}
-              alt={alt}
+              src={posterImage}
+              alt={posterImageAltText}
               widths={[320, 768, 1080]}
               sizes="(max-width: 600px) 320px, (max-width: 900px) 768px, (max-width: 1600px) 1080px"
             />
