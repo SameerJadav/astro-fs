@@ -35,6 +35,8 @@ const currentGenre = isDev
           class="md:max-h-full md:object-contain"
           src={currentGenre?.posterImage}
           alt={currentGenre?.posterImageAltText}
+          widths={[320, 768, currentGenre?.posterImage.width]}
+          sizes={`(max-width: 600px) 320px, (max-width: 900px) 768px, ${currentGenre?.posterImage.width}px`}
         />
       </div>
       <div class="md:flex md:flex-1 md:items-center">

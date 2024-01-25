@@ -36,8 +36,8 @@ import { genres } from "~/config";
             <Image
               src={posterImage}
               alt={posterImageAltText}
-              widths={[320, 768, 1080]}
-              sizes="(max-width: 600px) 320px, (max-width: 900px) 768px, (max-width: 1600px) 1080px"
+              widths={[320, 768, posterImage.width]}
+              sizes={`(max-width: 600px) 320px, (max-width: 900px) 768px, ${posterImage.width}px`}
             />
           </a>
         ))
