@@ -14,3 +14,16 @@ body {
   @apply bg-gray-1 font-sans text-gray-12 antialiased;
   text-rendering: optimizeLegibility;
 }
+
+body::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(34, 34, 34);
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
