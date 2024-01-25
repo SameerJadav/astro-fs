@@ -21,6 +21,7 @@ export const site = {
     twitterId: "@SameerJadav_",
   },
   links: {
+    // TODO: add discord links
     discord: "https://discord.com/invite/GQ6MUsAA",
     discordServer: "",
     github: "https://github.com/SameerJadav/fatality-studios",
@@ -59,7 +60,7 @@ export const genres: Genre[] = [
     path: "/hybrid",
     slug: "hybrid",
     track: "/tracks/hybridtrap.mp3",
-    tagline: "An escape from reality.",
+    tagline: "An escape from reality",
     description:
       "A place where a heart full of unsettling emotions can take a pause and experience the Super-natural. The sheer power and intensity of Hybrid Trap will rush your adrenaline levels.",
     posterImage: HybridTrap_Poster,
@@ -72,9 +73,9 @@ export const genres: Genre[] = [
     path: "/ukdrill",
     slug: "ukdrill",
     track: "/tracks/ukdrill.mp3",
-    tagline: "Straight out of the streets.",
+    tagline: "Straight out of the streets",
     description:
-      "Dark and menacing beats reflecting the realities of urban life. Express yourself, tell your story and let us handle the rest. We together will represent the culture of UK Drill.",
+      "Dark and menacing beats reflecting the realities of urban life. Express yourself, tell your story, and let us handle the rest. We together will represent the culture of UK Drill.",
     posterImage: UKDrill_Poster,
     posterImageAltText: "UK Drill Poster",
     genreImage: UKDrill_Photo,
@@ -85,7 +86,7 @@ export const genres: Genre[] = [
     path: "/pop",
     slug: "pop",
     track: "/tracks/pop.mp3",
-    tagline: "Charged with the brightest sounds.",
+    tagline: "Charged with the brightest sounds",
     description:
       "Crazy crowd screams and lights all focused on you, wouldn't you love that? We would too. Here is the Pop Music production to cherish your voice and turn it into a Masterpiece.",
     posterImage: Pop_Poster,
@@ -98,9 +99,9 @@ export const genres: Genre[] = [
     path: "/lofi",
     slug: "lofi",
     track: "/tracks/lofi.mp3",
-    tagline: "Take a pause and relax.",
+    tagline: "Take a pause and relax",
     description:
-      "A moment away from the chaotic life just to embrace how blissful it is to be here. The raw, unpolished and imperfect sounds will create a warm and nostalgic atmosphere for you to sit back and experience the unembraced.",
+      "A moment away from the chaotic life just to embrace how blissful it is to be here. The raw, unpolished, and imperfect sounds will create a warm and nostalgic atmosphere for you to sit back and experience the unembracedness.",
     posterImage: Lofi_Poster,
     posterImageAltText: "Lo-Fi Poster",
     genreImage: Lofi_Photo,
@@ -111,7 +112,7 @@ export const genres: Genre[] = [
     path: "/indie",
     slug: "indie",
     track: "/tracks/indie.mp3",
-    tagline: "Where a voice becomes a feeling.",
+    tagline: "Where a voice becomes a feeling",
     description:
       "Soothing music and soft drums, just the perfect partner for your lovely voice. A journey about the spirit of independence and self-expression, Indie music is one of the most beautiful genres that care about nothing but good music.",
     posterImage: Indie_Poster,
