@@ -15,7 +15,7 @@ function isActive(path: string): boolean {
   <div class="flex gap-2">
     <button
       id="previous-button"
-      class="rounded-full border border-gray-7 p-1 text-gray-11 transition-colors hover:border-gray-8 hover:text-gray-12"
+      class="rounded-full border border-gray-7 p-1 text-gray-11 transition-colors hover:border-gray-8 hover:text-gray-12 focus-visible:outline focus-visible:outline-offset-4 focus-visible:outline-gray-7"
     >
       <svg
         class="size-4"
@@ -34,7 +34,7 @@ function isActive(path: string): boolean {
     </button>
     <button
       id="next-button"
-      class="rounded-full border border-gray-7 p-1 text-gray-11 transition-colors hover:border-gray-8 hover:text-gray-12"
+      class="rounded-full border border-gray-7 p-1 text-gray-11 transition-colors hover:border-gray-8 hover:text-gray-12 focus-visible:outline focus-visible:outline-offset-4 focus-visible:outline-gray-7"
     >
       <svg
         class="size-4"
@@ -58,7 +58,10 @@ function isActive(path: string): boolean {
   >
     {
       genres.map(({ name, tagline, path, genreImage, genreImageAltText }) => (
-        <a href={path} class="snap-end">
+        <a
+          href={path}
+          class="snap-end focus-visible:outline focus-visible:outline-offset-4 focus-visible:outline-gray-7"
+        >
           <div
             class={cn(
               "flex rounded-md bg-gray-3",

@@ -10,7 +10,10 @@ import { genres } from "~/config";
     CHOOSE YOUR GENRE TO PROCEED
   </p>
   <div class="flex gap-2 lg:gap-4 xl:gap-6 2xl:gap-8">
-    <button id="previous-button">
+    <button
+      class="focus-visible:outline focus-visible:outline-offset-4 focus-visible:outline-gray-7"
+      id="previous-button"
+    >
       <svg
         class="size-10"
         width="15"
@@ -32,7 +35,10 @@ import { genres } from "~/config";
     >
       {
         genres.map(({ path, posterImage, posterImageAltText }) => (
-          <a href={path} class="snap-end">
+          <a
+            href={path}
+            class="snap-end focus-visible:outline focus-visible:outline-offset-4 focus-visible:outline-gray-7"
+          >
             <Image
               src={posterImage}
               alt={posterImageAltText}
@@ -43,7 +49,10 @@ import { genres } from "~/config";
         ))
       }
     </div>
-    <button id="next-button">
+    <button
+      class="focus-visible:outline focus-visible:outline-offset-4 focus-visible:outline-gray-7"
+      id="next-button"
+    >
       <svg
         class="size-10"
         width="15"
@@ -61,7 +70,7 @@ import { genres } from "~/config";
       <span class="sr-only">Next button</span>
     </button>
   </div>
-  <p class="text-center font-medium lg:text-lg">
+  <p class="text-center lg:text-lg">
     We have a varied range of genres each sounding very distinctive. You can
     explore and find the one for you.
   </p>

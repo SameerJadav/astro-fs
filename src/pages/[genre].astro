@@ -2,6 +2,7 @@
 // @ts-nocheck
 import { Image } from "astro:assets";
 import ContactButton from "~/components/ContactButton.astro";
+import Footer from "~/components/Footer.astro";
 import Header from "~/components/Header.astro";
 import MiniCarousel from "~/components/MiniCarousel.astro";
 import { genres, site } from "~/config";
@@ -55,4 +56,5 @@ const currentGenre = isDev
     </section>
     <MiniCarousel />
   </main>
+  <Footer className="pt-6 md:pt-10" />
 </GenrepageLayout>

@@ -6,7 +6,9 @@ import { site } from "~/config";
 <header
   class="sticky top-0 flex items-center justify-between bg-gray-1 px-4 py-4 md:px-6"
 >
-  <a href="/" class="text-lg font-bold uppercase tracking-tighter md:text-2xl"
+  <a
+    href="/"
+    class="text-lg font-bold uppercase tracking-tighter focus-visible:outline focus-visible:outline-offset-4 focus-visible:outline-gray-7 md:text-2xl"
     >{site.name}</a
   >
   <div class="flex items-center gap-2">
@@ -14,17 +16,18 @@ import { site } from "~/config";
       href={site.links.discord}
       target="_blank"
       rel="noopener noreferrer"
-      class="rounded-full bg-gray-12 px-2 py-0.5 font-medium text-gray-1 md:px-4 md:py-1"
+      class="rounded-full bg-gray-12 px-2 py-0.5 font-medium text-gray-1 focus-visible:outline focus-visible:outline-offset-4 focus-visible:outline-gray-7 md:px-4 md:py-1"
       >Contact Us</a
     >
     <a
       href={site.links.discordServer}
       target="_blank"
       rel="noopener noreferrer"
+      class="focus-visible:outline focus-visible:outline-offset-4 focus-visible:outline-gray-7"
     >
       <svg
         class="size-8 md:size-10"
-        fill="#ffffff"
+        fill="currentColor"
         width="800px"
         height="800px"
         viewBox="0 0 24 24"
